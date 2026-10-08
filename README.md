@@ -1,16 +1,45 @@
-# React + Vite
+## Proyecto: Platzi-host
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una aplicación web con:
 
-Currently, two official plugins are available:
+- Header principal
+- Sección hero
+- Barra de búsqueda
+- Listado de propiedades con cards reutilizables
+- Filtros simples por ciudad, tipo o texto
+- Estados de carga, error y resultados vacíos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tecnologias
 
-## React Compiler
+- React 19
+- Vite
+- TypeScript (clases 16–18)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Datos Mock
 
-## Expanding the ESLint configuration
+El proyecto no tiene backend. Se usaron datos mock para simular las propiedades, ejemplo:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+const properties = [
+{
+id: 1,
+title: "Apartamento moderno en Santiago",
+location: "Santiago, Chile",
+price: 75,
+image: "/images/apartment.jpg",
+type: "Apartamento"
+}
+];
+
+## Cómo usar este repositorio
+
+1. Clona el repositorio:
+
+git clone https://github.com/joselynmirror/stayhub.git
+
+2. Instala dependencias:
+
+npm install
+
+3. Levanta el servidor de desarrollo:
+
+npm run dev
